@@ -1,0 +1,447 @@
+body {
+    
+    font-family: 'Open Sans', sans-serif;
+/* font-family: 'Roboto', sans-serif; */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: white;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem 0rem;
+
+}
+
+
+
+.navbar a {
+    /* float: left; */
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    padding: 1rem 1rem;
+    text-decoration: none;
+
+}
+
+.navbar a:hover {
+    background-color: black;
+    color: white;
+}
+
+.logo {
+    /* float: left; */
+    padding: 0.2rem 1rem;
+    color: black
+    
+}
+
+/* Style for the video container */
+.hero-video {
+    position: relative;
+    height: 500px; /* Adjust the height as needed */
+    overflow: hidden;
+}
+
+/* Style for the video */
+video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Style for the text overlay */
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+/* Style for the H1 heading */
+.text-overlay h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Style for the paragraph */
+.text-overlay p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Style for the button */
+.text-overlay .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #AFC83B; /* Customize the button color */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the button */
+.text-overlay .btn:hover {
+    background-color: #637900; /* Customize the hover color */
+    color: white;
+}
+
+/* Style for the welcome section */
+.welcome-section {
+    text-align: center;
+    padding: 4rem 5rem;
+}
+
+/* Style for the heading */
+.welcome-section h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Style for the card container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Style for each card */
+.card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Style for card image */
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Style for card H2 (1800+) */
+.card h2 {
+    font-size: 24px;
+    color: #777;
+    margin: 10px 0;
+}
+
+/* Style for card H3 (Title) */
+.card h3 {
+    font-size: 20px;
+    color: black;
+}
+
+ /* Style for the about section */
+ .about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 50px; */
+}
+
+/* Style for the left block */
+.left-block {
+    flex: 2;
+    padding:2rem;
+}
+
+/* Style for the right block */
+.right-block {
+    flex: 1;
+}
+
+/* Style for the H2 in the left block */
+.left-block h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Style for the paragraph in the left block */
+.left-block p {
+    font-size: 1rem;
+    line-height: 2;
+}
+
+/* Style for the button in the left block */
+.left-block .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #AFC83B; /* Customize the button color */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the button */
+.left-block .btn:hover {
+    /* background-color: #def47a; Customize the hover color */
+    background-color: #637900; /* Customize the hover color */
+    color: white;
+}
+
+/* Style for the image in the right block */
+.right-block img {
+    max-width: 100%;
+    height: 90vh;
+}
+
+ /* Style for the services section */
+ .services-section {
+    background-color: #AFC83B;
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+
+/* Style for the H1 heading */
+.services-section h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.services-section h3{
+    color: rgb(255, 255, 255);
+}
+/* Style for the card container */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Style for each card */
+.card {
+    flex: 1;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Style for card logo */
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Style for card H3 */
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style for card paragraph */
+.card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Style for card button */
+.card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white; /* Customize the button color */
+    color: #AFC83B;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the button */
+.card .btn:hover {
+    background-color: #637900; /* Customize the hover color */
+    color: white;
+}
+
+ /* Style for the "What's New?" section */
+ .whats-new-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Style for the card container */
+.whats-new-card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style for each card */
+.whats-new-card-container .card {
+    flex: 1;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Style for card image */
+.whats-new-card-container .card img {
+    width:100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Style for card H3 (title) */
+.whats-new-card-container .card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color:#AFC83B ;
+}
+
+/* Style for card paragraph (lorem ipsum text) */
+.whats-new-card-container .card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Style for the footer */
+footer {
+    display: flex;
+    color: black;
+    /* padding: 50px 0; */
+}
+
+/* Style for the footer sections */
+.footer-section {
+    flex: 1;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style for section headings */
+.section-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Style for contact information */
+.contact-info {
+    font-size: 18px;
+}
+
+/* Style for featured links */
+.featured-links {
+    font-size: 18px;
+}
+
+/* Style for the navigation links */
+.featured-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.featured-links a {
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem;
+    margin: 0 10px;
+}
+
+h3, h2, span{
+    color: #AFC83B;
+}
+ body{
+    color: #333333;
+}
+
+/* Media query for screens smaller than 768px (e.g., smartphones) */
+@media screen and (max-width: 768px) {
+
+    p{
+        font-size: 0.8rem;
+    }
+    /* Navbar styles */
+    .navbar {
+        /* Modify your navbar styles for smaller screens here */
+        height: 2rem;
+    }
+
+    .navbar a {
+        /* float: left; */
+        font-size: 0.6rem;
+        color: black;
+        text-align: center;
+        padding: 1rem 1rem;
+        text-decoration: none;
+        
+    
+    }
+
+    .logo img{
+        height: 1.5rem;
+    }
+
+    /* Hero section styles */
+    .hero-video {
+        /* Modify your hero section styles for smaller screens here */
+        width: 100%;
+        height: auto;
+    }
+
+    /* Welcome section styles */
+    .welcome-section {
+        /* Modify your welcome section styles for smaller screens here */
+        width: 80%;
+        height: auto;
+        margin-bottom: 3rem;
+        font-size: 0.8rem;
+        
+    }
+
+    /* About section styles */
+    .about-section p{
+        /* Modify your about section styles for smaller screens here */
+        font-size: 0.8rem;
+    }
+
+    /* Services section styles */
+    .services-section .card-container {
+        /* Modify your services section styles for smaller screens here */
+        width: 90%;
+    }
+
+    /* What's New section styles */
+    .whats-new-section .card p,.card p{
+        /* Modify your "What's New?" section styles for smaller screens here */
+        font-size: 0.8rem;
+    }
+
+    /* Footer section styles */
+    footer .featured-links {
+        /* Modify your footer section styles for smaller screens here */
+        font-size: 0.8rem;
+    }
+}
+
+/* Media query for screens smaller than 576px (e.g., smaller smartphones) */
+@media screen and (max-width: 420px) {
+    /* Modify styles for even smaller screens if needed */
+    
+}
