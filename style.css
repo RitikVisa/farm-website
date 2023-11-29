@@ -10,7 +10,7 @@ html{
     /* scroll-snap-type:mandatory; */
 }
 .navbar {
-    background-color: transparent;
+    background-color: white;
     /* overflow: hidden; */
     display: flex;
     justify-content: space-between;
@@ -120,7 +120,7 @@ video {
 /* Style for the card container */
 .card-container {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
 }
 
@@ -168,14 +168,14 @@ video {
 
 /* Style for the left block */
 .left-block {
-    flex: 2;
     padding:2rem;
     padding-top: 0;
+    width: 50vw;
 }
 
 /* Style for the right block */
 .right-block {
-    flex: 1;
+    width: 50vw;
 }
 
 /* Style for the H2 in the left block */
@@ -211,10 +211,8 @@ video {
 
 /* Style for the image in the right block */
 .right-block img {
-    max-width: 100%;
-    height: 80vh;
-    border-radius: 16px;
-    box-shadow: 0.5rem 0.5rem 0.5rem #333333;
+   height: 100vh;
+   width: 50vw;
 }
 
  /* Style for the services section */
@@ -238,14 +236,14 @@ video {
     color: rgb(255, 255, 255);
 }
 /* Style for the card container */
-.card-container {
+.cards-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 /* Style for each card */
-.card {
+.cards {
     flex: 1;
     max-width: 300px;
     margin: 20px;
@@ -256,7 +254,7 @@ video {
 }
 
 /* Style for card logo */
-.card img {
+.cards img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -264,19 +262,19 @@ video {
 }
 
 /* Style for card H3 */
-.card h3 {
+.cards h3 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
 /* Style for card paragraph */
-.card p {
+.cards p {
     font-size: 12px;
     line-height: 1.5;
 }
 
 /* Style for card button */
-.card .btn {
+.cards .btn {
     display: inline-block;
     padding: 10px 20px;
     background-color: white; /* Customize the button color */
@@ -288,7 +286,7 @@ video {
 }
 
 /* Hover effect for the button */
-.card .btn:hover {
+.cards .btn:hover {
     background-color: #637900; /* Customize the hover color */
     color: white;
 }
@@ -392,7 +390,85 @@ h3, h2, span{
  body{
     color: #333333;
 }
+.our-story-shape.green-overlay-copy {
+    background-color: white;
+    background-image: url(./green-shape-background-website.png);
+    background-position: 50%;
+    background-repeat: repeat;
+    background-size: contain;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 24px;
+    overflow: hidden;
+}
 
+.our-story-shape-copy.green-overlay-copy {
+    background-color: transparent;
+    background-image: url(./green-shape-backgroun-farm-website.webp);
+    background-position: 50%;
+    background-repeat: repeat;
+    background-size: contain;
+    margin-bottom: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 24px;
+    overflow: hidden;
+}
+
+
+/* slider */
+.slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    background-color: #AFC83B;
+}
+
+.slider h1{
+    color: white;
+}
+.slide-container{
+    height: 80%;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    overflow-x: hidden;
+}
+
+.slide{
+    height: 80%;
+    width: 25vw;
+    background-color: white;
+}
+
+.slide1{
+    background-image: url(./del.png);
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+}
+.slide2{
+    background-image: url(./mapro.png);
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+
+}
+.slide3{
+    background-image: url(./reliance.png);
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+
+}
+
+.certificates{
+    height: 30vh;
+}
 /* Media query for screens smaller than 768px (e.g., smartphones) */
 @media screen and (max-width: 768px) {
 
@@ -401,18 +477,14 @@ h3, h2, span{
     }
     /* Navbar styles */
     .navbar {
+        width: 100vw;
         /* Modify your navbar styles for smaller screens here */
-        height: 2rem;
+        height: 4rem;
     }
 
     .navbar a {
         /* float: left; */
-        font-size: 0.6rem;
-        color: black;
-        text-align: center;
-        padding: 1rem 1rem;
-        text-decoration: none;
-        
+        display: none; 
     
     }
 
@@ -423,7 +495,7 @@ h3, h2, span{
     /* Hero section styles */
     .hero-video {
         /* Modify your hero section styles for smaller screens here */
-        width: 100%;
+        width: 100vw;
         height: auto;
     }
 
@@ -438,11 +510,22 @@ h3, h2, span{
     }
 
     /* About section styles */
-    .about-section p{
+    .about-section {
         /* Modify your about section styles for smaller screens here */
+        display: flex;
+        flex-direction: column;
+    justify-content: center;
+    align-items: center;
         font-size: 0.8rem;
     }
-
+    .left-block {
+        
+        width: 100vw;
+    }
+    .right-block, .right-block img {
+        width: 100vw;
+    }
+    
     /* Services section styles */
     .services-section .card-container {
         /* Modify your services section styles for smaller screens here */
@@ -450,10 +533,19 @@ h3, h2, span{
     }
 
     /* What's New section styles */
-    .whats-new-section .card p,.card p{
+    .whats-new-section {
         /* Modify your "What's New?" section styles for smaller screens here */
+        overflow-x: hidden;
         font-size: 0.8rem;
     }
+    .whats-new-card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
 
     /* Footer section styles */
     footer .featured-links {
@@ -465,5 +557,100 @@ h3, h2, span{
 /* Media query for screens smaller than 576px (e.g., smaller smartphones) */
 @media screen and (max-width: 420px) {
     /* Modify styles for even smaller screens if needed */
+    .navbar{
+        height: 5vh;
+        margin: 0%;
+    }
+
+    #hero{
+        margin-top: 8vh;
+    }
+    .text-overlay h1{
+        font-size: 1rem;
+    }
+    .text-overlay p{
+        display: none;
+    }
+    .text-overlay a{
+        font-size: 0.7rem;
+    }
+   .btn{
+    padding: 5px 10px;
+        width: 30vw;
+    }
+
+
+    .welcome-section{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .about-section p{
+        font-size: 0.7rem;
+    }
+    .left-block{
+        width: 80%;
+        padding: 5%;
+    }
+
+    .services-section{
+        padding: 10px;
+    }
     
+    .certificates{
+        display: none;
+    }
+    .our-story-shape-copy, .green-overlay-copy{
+        display: none;
+    }
+
+    .slide-container{
+       width: 250vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    overflow-x: hidden;
+
+    }
+    .slider h1{
+        font-size: 1rem;
+    }
+    .slider{
+    overflow-x: hidden;
+    }
+
+    .slide1, .slide2, .slide3{
+        /* height: 30vh; */
+        margin: 5px;
+        width: 100vw;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .card h3{
+        font-size: 1rem;
+    }
+
+    .whats-new-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .whats-new-card-container{
+        width: 60vw;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
+
